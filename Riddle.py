@@ -1,4 +1,5 @@
-def riddle():
+#This is a guessing game. It uses the ridddle from the 1995 Batman Forever movie. It will give the user 3 chances to guess the answer. It will not accept a blank answer. If the user fails to guess correctly in 3 tries, they will be given a chance to play again.
+def riddle(): #function checks users answer and returns tuple with indication if user ran out of guesses or won
     out_of_guesses = False
     secret_word: str = "bat"
     guess_count = 0
@@ -6,7 +7,7 @@ def riddle():
     guess = ""
     while secret_word not in guess and not out_of_guesses:
         guess = input("\nEnter a guess: ")
-        if guess == "":
+        if guess == "": #checks for blank answer
             print("You have to enter an answer. Please try again.")
         elif guess_count == 0 and "bat" not in guess and guess != "":
             guess_count += 1
