@@ -4,7 +4,6 @@ import time
 
 def riddle(): #function checks users answer and returns boolean of variable out_of _guesses
     out_of_guesses = False
-    secret_word = 'bat'
     guess_count = 0
     guess = ''
     answer = None
